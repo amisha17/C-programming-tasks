@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ int sub1,sub2,sub3,sum;
+ float average;
+ clrscr();
+
+ printf("\n Enter marks of 3 subjects each out of 100 ");
+
+ printf("\n Maths = ");
+ scanf("%d",&sub1);
+
+ printf("\n Science = ");
+ scanf("%d",&sub2);
+
+ printf("\n English = ");
+ scanf("%d",&sub3);
+
+ sum=sub1+sub2+sub3;  
+ printf("\n Total marks = %d",sum);
+
+ average=sum/3;  
+ printf("\n Percentage = %f",average);
+ getch();
+}
