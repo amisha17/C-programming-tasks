@@ -1,0 +1,29 @@
+
+#include <stdio.h>
+#include <string.h>
+ 
+void main()
+{
+    char firstn[20], secondn[20];
+    int i, j, pos;
+ 
+    printf("Enter the first name : ");
+    scanf("%s", firstn);
+    printf("Enter the second name: ");
+    scanf("%s", secondn);
+    printf("First name  = %s\n", firstn);
+    printf("Second name = %s\n", secondn);
+ 
+    for (i = 0; firstn[i] != '\0'; i++)
+    {
+        
+        
+    }
+    pos = i;
+    for (j = 0; secondn[j] != '\0'; i++)
+    {
+        firstn[i] = secondn[j++];
+    }
+    firstn[i] = '\0';
+    printf("Full name= %s\n", firstn);
+}
