@@ -1,0 +1,33 @@
+#include<stdio.h>
+
+int main()
+{
+
+
+ float a,b,centigrade, fahrenheit;
+ int x;
+ printf("1. For Fahrenheit To Celsius\n");
+ printf("2. For Celsius To Fahrenheit\n");
+ printf("\n Enter Your Choice\n");
+ 
+ scanf("%d",&x);
+ switch(x)
+ {
+ case 1:
+  printf("\n Enter The Value of Fahrenheit Temperature: ");
+  scanf("%f",&a);
+  centigrade=5*(a-32)/9;
+  printf("\n Celsius Temperature: %f ",centigrade);
+  break;
+ case 2:
+  printf("\n Enter The Value of Celsius Temperature: ");
+  scanf("%f",&b);
+  fahrenheit=((9*b)/5)+32;
+  printf("\n Fahrenheit Temperature: %f ",fahrenheit);
+  break;
+ default:
+ printf("Try Again!!! \n");
+ }
+ getch();
+ return(0);
+}
